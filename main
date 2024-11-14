@@ -1,0 +1,317 @@
+code = input('press enter to start\n')
+if code == 'broken':
+	print('no')
+
+options = input(
+    'thank you for choosing to use bablabal, please choose one of the options below to continue\n(r)-recommendations\n(c)-credits\n(q)-quit\n'
+).lower()
+
+genres = ['action', 'adventure', 'comedy', 'fantasy', 'slice of life']
+
+again = True
+while again == True:
+
+	if options == 'q' or options == 'quit':
+		print('hope you come again!')
+		again = False
+
+	if options == 'c' or options == 'credits':
+	  bakkajs = input('This program was made by MAastansd')
+
+	elif options == 'r' or options == 'reccomendations':
+		# optin = input('Please choose what youd like reccommendations for. \n(A)anime\n(T)tv show\n(M)movie\n').lower()
+
+		# if optin == 'a' or 'anime':
+
+		# genreA = str(input ('please choose a genre from the list below.\nAction\nAdventure\nComedy\nFantasy\nSlice of Life\n')).lower()
+
+		try:
+			genreA = (input(
+			    '\nplease choose a genre from the list below.\nAction\nAdventure\nComedy\nFantasy\nSlice of Life\n'
+			)).lower()
+		except:
+			if genreA != genres:
+				print('Your input is invalid please try again!')
+
+		anime = [
+		    'attack on titan', 'aldnoah.zero', 'my-hime', 'appare-ranman',
+		    'akame ga kill', 'angel beats', 'black clover',
+		    'izetta: the last witch', 'kill la kill', 'noragami',
+		    'hunter x hunter', 'sirius the jaeger', 'little witch academia',
+		    'made in abyss', 'fairytail', 'castlevania', 're:zero', 'dororo',
+		    'bleach', 'grimgar of fantasy and ash', 'mushi-shi',
+		    'rage of bahamut', 'endro!', 'the disastrous life of saiki k.',
+		    'zombie land saga', 'flcl', 'my bride is a mermaid',
+		    'cromartie high school', 'sleepy princess in the demon castle',
+		    'isekai quartet', 'horimiya', 'the quintessential quintuplets',
+		    'gintama', 'the pet girl of sakurasou', 'sword art online', 'bna',
+		    'blue exorcist', 'the rising of the shield hero', 'noragami',
+		    're:creators', 'k', 'nagi no asukara',
+		    'magi: the labyrinth of magic', 'the rising of the shield hero',
+		    'chaos dragon', 'anohana: the flower we saw that day',
+		    'violet evergarden', 'beyond the boundary', 'k-on!', 'toradora',
+		    'your lie in april', 'love, chunibyo & other delusions',
+		    'kokoro connect', 'my little monster', 'blend s',
+		    'myriad colors phantom world'
+		]
+
+		try:
+			if genreA == 'action':
+				actionabime = input(
+				    'Here is a list of action animes, if you would like more information about the anime please just type out the name and you will get a summary of the anime!   \nAttack on Titan\nAldnoah.Zero\nMy-HiME\nAppare-Ranman\nAkame ga kill\nAngel Beats\nBlack Clover\nIzetta: The Last Witch\nKill la Kill\nNoragami\nHunter x Hunter\nSirius the Jaeger\n\n'
+				).lower()
+		except:
+			if actionabime not in anime:
+				print('your input is invalid!please try again')
+		actionabime = ''
+		# print('test')
+		if actionabime == 'attack on titan':
+			print(
+			    'AOT is set in a world where humanity lives inside cities surrounded by enormous walls that protect them from gigantic man-eating humanoids referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about the destruction of his hometown and the death of his mother.'
+			)
+		if actionabime == 'aldnoah.zero':
+			print(
+			    'In 1972, an ancient alien hypergate was discovered on the surface of the moon. Using this technology, humanity began migrating to Mars and living there and created the Vers Empire. Now, in 2014, war is brewing between Mars and the Earth.'
+			)
+		if actionabime == 'my-hime':
+			print(
+			    'A group of school girls discover that they have been given the ability to materialize weapons and control robotic beasts called Children to stop an evil organisation from their plans of domination.'
+			)
+		if actionabime == 'appare-ranman':
+			print(
+			    'After a certain mishap, the brilliant but socially inept engineer Appare Sorano and the shrewd but cowardly samurai Kosame Isshiki find themselves drifting on a boat from Japan to America. ... Broke, the two decide to compete in the Trans-America Wild Race to win the prize and return to Japan.'
+			)
+		if actionabime == 'akame ga kill':
+			print(
+			    'the story focuses on Tatsumi, a young villager who travels to the capital to raise money for his home only to discover strong corruption in the area. The assassin group known as Night Raid recruits the young man to help them in their fight against the corrupt empire'
+			)
+		if actionabime == 'angel beats':
+			print(
+			    'The story takes place in the afterlife and focuses on Otonashi, a boy who lost his memories of his life after dying. He is enrolled into the afterlife school and meets a girl named Yuri who invites him to join the Afterlife Battlefront, an organization she leads which fights against the student counsil president Kanade Tachibana, a girl also know as Angel with supernatural powers'
+			)
+		if actionabime == 'black clover':
+			print(
+			    'The story centers around Asta, a younf boy seemingly born without any magic power, something that is unknown in the world he lives in. With his fellow mages from the Black Bulls, Asta plans to become the next Wizard King.'
+			)
+		if actionabime == 'izetta: the last witch':
+			print(
+			    'Set in an alternate Earth on the eve of the Second World Wat, the story follows Izetta, the last surviving member of a clan of witches that possessess the ability to magically manupilate any object that they touvh. Izetta pledges to help protect Princess Fine and the tiny Alpine country of Eylstadt from invasion by the imperialistic forces of Germania.'
+			)
+		if actionabime == 'kill la kill':
+			print(
+			    "The series followes vagrant schoolgirl Ryuko Matoi on her search for her father's killer, which brings her into violent conflict with Satsuki Kiryuin, the ironwilled student council president of Honnouji Academy, and her mother's fashion empire. Ryuko, Satsuki and others obtain martial arts superpowers from their clothes, which appear to have a will of their own"
+			)
+		if actionabime == 'noragami':
+			print(
+			    "Hiyori Iki was a normal middle school student until she was involved in a bus accident while trying to protect and stranger. This incident causes her soul to frequently slip out of her body, and she becomes aware of the existence of two parallel worlds: the Near Shore, where reqular humans and creatures reside, and the Far Shore, where demons and human souls linger. Through her soul, she meets the strange, nameless god without a shrine, Yato. Yato is determined to make a name for himself out there by accepting any wishes for 5 yen, including Hiyori's to fix her body. Along with Yato's Regalia -a weapon from a dead human's soul, and named by the god in question - Yukine, the trio go through many adventures struggling with their friendship, identity, and pasts."
+			)
+		if actionabime == 'hunter x hunter':
+			print(
+			    'The story focuses on a young boy named Gon Freecss who discovers that his father, who left him at a young age, is actually a world renowned Hunter, a licensed professional who specializes in dantastical pursuits such as location rare or unidentified anime species, treasure hunting, surveying unexplored enclaves, or hunting down lawless individuals. Gon departs on a journy to become a Hunter and eventually find his father. Along the way, Gon meets various other Hunters and encounters the paranormal.'
+			)
+		if actionabime == 'sirius the jaeger':
+			print(
+			    'in 1930, a group of Vampires leave China and flee to Japan. They are followed b a group of vampire hunters called the "Jaegers" under the cover of being staff of the "V Shipping Company". Among them is a young "Sirius" man called Yuliy, a werewolf whose home village was destroyed by Vampires. In the past, a member of the Sirius royal family was chosen by the oracle to be the agent of god and permitted to possess a mysterious holy relic known as "The Ark of Sirius" which, as a gift from God, could exert power over all thing. because of its potential the Sirius people came under attack from groups seeking its power so it was sealed away in a secret location, never to be used again. Yuliy and the Jaegers engage in a deadly battle with the Vampires for possession of the relic.'
+			)
+
+		adventureabime = ''
+		try:
+			if genreA == 'adventure':
+				adventureabime = input(
+				    'Here is a list of adventure animes, if you would like more information about an anime please just type out the name and you will get a summary of the anime !\nLittle Witch Academia \nMade in Abyss\nCastlevania\nRe:Zero\nDororo\nBleach\nGrimgar of Fantasy and Ash\nMushi-Shi\nRage of Bahamut\nENDRO!\n\n'
+				).lower()
+		except:
+			if adventureabime != anime:
+				print('your input is invalid!please try again')
+
+		if adventureabime == 'little witch academia':
+			print(
+			    'Little Witch Academia takes place at Luna Nova Magical Academy, a prestigious school for young girls training to become witches. Having been inspired by a witch named Shiny Chariot, a girl named Atsuko "Akko" kagari enrolls at Luna Nova Academy to become a witch, but struggles due to her non-magical background. This all changes when she discovers the Shiny Rod, a powerful magic relic left behind by Chariot'
+			)
+		if adventureabime == 'made in abyss':
+			print(
+			    "An orphaned girl named Riko lives in the Belchero Orphanage in the town of Orth. The town surrounds a stange, giant hole going deep into the earth, which is commonly called The Abyss. The Abyss harbors artifacts and remnants of a civilization long gone, and is therefore a popular hunting spot for the so-called Cave Raiders, who undertake arduous and dangerous descents into the mist-filled pit to recover whatever relics they can find. Returning from the Abyss can be as dangerous as "
+			    "the Curse of the Abyss,"
+			    " a mysterious and potentially fatal malady, manifests upon ascension. The deeper one goes, the more acute the effects of the curse; few who have descended into the lower regions have returned to tell of their experiences. Some legendary Cave Raiders earn the title of White Whistle, One of them being Riko's mother, Lyza.\nRikos longing in life is to follow in her mothers footsteps and become a White Whistle. One day she discovers a robot resembling a human boy in the Abyss and names him Reg. Riko and her friends sneak Reg into Belchero and quickly welcome him into their close-knit group. Some time later, a balloon reaches the surface from the depths of the Abyss containing pages of discoveries made by Lyza, as well as a message for Riko stating she is waiting at the bottom of the Abyss. Riko, determined to find her mother, bids farewell to her friends and departs to the Abyss with Reg as her companion."
+			)
+		if adventureabime == 'castlevania':
+			print(
+			    "When his wife is burned at the stake after falsely being accused of witchcraft, the vampire Count Dracula declares all the people os wallachia will pay with their lives. He summons an army of demons which overruns the country, causing the people to live their lives of fear and distrust. To combat this, the outcast monster hunter Trevir Belmont takes up arms against Dracula's forces, aided by the magician Sypha Belnades and Dracula's dhampir son Alucard."
+			)
+		if adventureabime == 're:zero':
+			print(
+			    'Subaru Natsuki is a NEET who is suddenly summoned to a fantasy-like world. Just after arriving, he is killed while trying to help a young elf he befriends called Emilia, who is a candidate to become the next ruler of the Kingdom of Lugunica, just to revive some hours in the past. After dying some times, Subaru realizes that he has the power to turn back time after his death. After sucessfully helping Emilia, Subaru starts living in her house as a butler. Out of gratitude and affection for Emilia, Subaru makes use of his newfound ability to protect her and help on her ambition to be successfully appointed as the next queen, also providing assistance to other friends he makes along the story, while suffering due to the pain inflicted on him every time he dies, and carrying along the memories of everything that happened before his power activates which is forgotten by everybody except for him.'
+			)
+		if adventureabime == 'dororo':
+			print(
+			    'Dororo revolves around a rōnin named Hyakkimaru (百鬼丸) and young orphan thief named Dororo (どろろ) during the Sengoku period. The rōnin was born malformed, limbless and without facial features or internal organs. This was the result of his birth father daimyō Kagemitsu Daigō forging a pact with 48 sealed demons so that he might rule the land and increase its wealth and prosperity. In return, he promised the demons anything that they wanted which belonged to him. This enabled them to roam free and commit atrocities along the countryside.'
+			)
+		if adventureabime == 'bleach':
+			print(
+			    'The story follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper—a death personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki. His newfound powers force him to take on the duties of defending humans from evil spirits and guiding departed souls to the afterlife'
+			)
+		if adventureabime == 'grimgar of fantasy and ash':
+			print(
+			    'The story follows a group of people who suddenly find themselves in a fantasy world with no memories from before their arrival, and chronicles their struggles to survive and make a life for themselves as volunteer soldiers.\nThe story begins by showing a group of novice adventurers battling goblins in a forest. The party seems utterly out of their element and is forced to flee. From there we discover through flash back and dialog that the party, who likely originate from modern earth, woke with a large group of people on this world just a few weeks ago.'
+			)
+		if adventureabime == 'mushi-shi':
+			print(
+			    'Mushishi is set in an imaginary time between the Edo and Meiji periods, featuring some 19th-century technology but with Japan still as a "closed country".[6] The story features ubiquitous creatures called Mushi (蟲) that often display what appear as supernatural powers. It is implied that there are many more lifeforms more primitive than "normal" living things such as animals, plants, fungi, and bacteria, and Mushi is the most primitive of all. Due to their ethereal nature, most humans are incapable of perceiving Mushi and are oblivious to their existence, but there are a few who possess the ability to see and interact with Mushi. One such person is Ginko (ギンコ), the main character of the series voiced by Yuto Nakano in the original version and by Travis Willingham in the English dub.[7][8] He employs himself as a Mushi Master (蟲師, mushi-shi), traveling from place to place to research Mushi and aid people suffering from problems caused by them.\nThe series is an episodic anthology with no overarching plotline in which the only common elements are Ginko and the Mushi. Ginko is a man with one green eye, who not only can see various types of mushi but also attracts them. Because of this ability, he is constantly wandering and smokes in order to keep the mushi away. He appears to have a generally laid back personality, however, he can be very serious and focused on his work when it comes to protecting people from mushi. He stresses that the mushi are not evil, but merely trying to survive like everyone else. A majority of the stories do not focus on Ginko but rely on him as a catalyst to move the story forward by diagnosing or curing mushi-related illnesses and phenomena.'
+			)
+		if adventureabime == 'rage of bahamut':
+			print(
+			    'Mistarcia is a magical world where humans, gods, and demons mingle together. In the past, the black-and-silver winged demon beast Bahamut had threatened to destroy the land, but humans, gods, and demons overcame their differences to fight together and sealed its power. The key to that seal was split in two, one half given to the gods and the other to demons, so that they would never be united and Bahamut never released. Now, two thousand years later, the world is in an era of peace until the day a woman named Amira appears with the gods half of the key. With an apparent loss of memory, she searches for her lost mother and is assisted by the bounty hunters Favaro Leone and Kaisar Lidfard. Their quest is part of a larger story of an epic clash between humans, gods and demons, between those who want to revive Bahamut and those who are trying to prevent it.'
+			)
+		if adventureabime == 'endro!':
+			print(
+			    'On Naral Island, a hero named Yulia "Yusha" Chardiet and her party of friends confront the Demon Lord plaguing the Kingdom of Lapanesta. However, their sealing spell goes wrong and the girls inadvertently send the Demon Lord back in time to before Yusha became a hero. Reverted to the size of a small girl, the Demon Lord, now known as Mao, becomes a teacher at Yushas Adventure School with the aim of expelling Yusha so that shell never become a hero in the future.'
+			)
+
+		comedyabime = ''
+		try:
+			if genreA == 'comedy':
+				comedyabime = input(
+				    'Here is a list of comedy animes, if you would like more information about an anime please just type out the name and you will get a summary of the anime among other information!\nThe Disastrous Life of Saiki K.\nZombie Land Saga\nFLCL\nMy Bride is a Mermaid\nCromartie High School\nSleepy Princess in the Demon Castle\nIsekai Quartet\nHorimiya\nGintama\nThe Pet Girl of Sakurasou\n\n'
+				).lower()
+
+		except:
+			if comedyabime != anime:
+				print('your input is invalid!please try again')
+
+		if comedyabime == 'the disastrous life of saiki k.':
+			print(
+			    'Kusuo Saiki is one of the high school students who was born having powers, including psychokinesis and teleportation. He attempts to hide it from everyone at school. He is put in several seemingly normal scenarios in which he uses it to hide his abnormality.'
+			)
+		if comedyabime == 'zombie land saga':
+			print(
+			    'In the year 2008, high school student Sakura Minamoto is abruptly killed by a truck on the morning she plans to submit an idol application. Ten years later, Sakura, along with six "legendary" girls from various eras of Japans history, are brought back as zombies by a man named Kotaro Tatsumi, who seeks to revitalize Saga Prefecture by putting together an all-zombie idol group known as Franchouchou (フランシュシュ, Furanshushu).'
+			)
+		if comedyabime == 'flcl':
+			print(
+			    'The first season of FLCL is a coming-of-age story and revolves around Naota Nandaba, a 12-year-old, working-class boy living with his widowed father and grandfather. His life in the city of Mabase is interrupted by the arrival of a Vespa-riding maniac named Haruko Haruhara. She runs over Naota then revives him with CPR before hitting him on the head with her left-handed, electric bass guitar (a blue, vintage Rickenbacker 4001) and proceeds to stalk him.[14][15][16] Finding Haruko weaseling her way into his life as a live-in maid, Naota discovers that the head injury she caused created an "N.O." portal, which giant robots produced by a company known as Medical Mechanica emerge from periodically. The first of these robots is hit on the head by Haruko and becomes a friendly service robot later named Canti. Canti ingests Naota to assume the reddened form he first had when fighting the robots sent after him.'
+			)
+		if comedyabime == 'my bride is a mermaid':
+			print(
+			    'he story of My Bride Is a Mermaid revolves around a young teenage boy named Nagasumi Michishio. One day during his summer vacation at the Seto Inland Sea, Nagasumi is saved from drowning by a mermaid named Sun Seto. Under mermaid law however, either the mermaid whose identity was revealed or the human who saw the mermaid must be executed. In an attempt to save both Nagasumi and Suns lives, Suns family (which is the head of a mermaid Yakuza group) reluctantly decides that the two are to be married. Suns father Gōzaburō is enraged about his daughters sudden marriage. Between Gōzaburōs constant attempts on his life and the madcap antics of a slew of antagonists, Nagasumi has a hard time transitioning into his new married lifestyle.'
+			)
+		if comedyabime == 'cromartie high school':
+			print(
+			    'It follows the everyday life of Takashi Kamiyama and his odd classmates at Cromartie High School, an infamous school for delinquents. The series is a parody of Japanese "yankii" (juvenile delinquent) manga of the 1970s and 1980s.'
+			)
+		if comedyabime == 'sleepy princess in the demon castle':
+			print(
+			    'The story follows Princess Syalis, a young princess who was kidnapped by the demon king, and her quest to sleep well while imprisoned.'
+			)
+		if comedyabime == 'isekai quartet':
+			print(
+			    'One day, a magic button suddenly appears. The protagonists from KonoSuba, Overlord, Re:Zero − Starting Life in Another World, and Saga of Tanya the Evil all press the button occasionally, unintentionally and move to a parallel world — another brand new isekai — where a new story featuring high school life begins. Soon, they are joined by protagonists from The Rising of the Shield Hero and Cautious Hero: The Hero Is Overpowered but Overly Cautious.'
+			)
+		if comedyabime == 'horimiya':
+			print(
+			    'Kyoko Hori is a bright and popular high school girl, contrasting with her classmate, the gloomy and apparently nerdy glasses-wearing boy Izumi Miyamura. Outside of school, Hori is a homebody who dresses down and takes care of the household and her younger brother Souta. She tries to keep this a secret from her classmates. One day when Souta returned home with a nosebleed, he was helped by someone sporting multiple earrings and tattoos as well as a punk-styled appearance. The person recognizes her and reveals himself to be Miyamura. The two agree to keep their real personas a secret from their schoolmates, but start relating to each other as friends and later as a couple.'
+			)
+		if comedyabime == 'gintama':
+			print(
+			    "The story is set in an alternate-history late-Edo period, where humanity is attacked by aliens called 'Amanto' (天人, 'Sky People'). Edo Japan's samurai fight to defend Earth, but the shōgun cowardly surrenders when he realizes the aliens' power. He agrees to an unequal contract with the aliens, placing a ban on carrying swords in public and allowing the invaders to enter the country. The samurai's swords are confiscated and the Tokugawa bakufu (shogunate) becomes a puppet government.\nThe series focuses on an eccentric samurai, Gintoki Sakata who works as an odd-jobs freelancer. He helps a teenager named Shinpachi Shimura save his sister Tae from an alien group who want to send her to a brothel. Impressed by Gintoki, Shinpachi becomes his freelance apprentice to pay the bills and learn more about the enigmatic samurai. When the pair rescues a teenage alien girl with super strength, Kagura, from a Yakuza group, they accept her into their freelancing business and the three become known as 'Yorozuya' (万事屋, 'We do everything' or literally 'The Anything Store') While working, they regularly encounter the Shinsengumi police force, who often ally with Gintoki when work involves dangerous criminals. The trio also meets Gintoki's former comrades from the Amanto invasion, including the revolutionary Kotaro Katsura who is friendly toward them despite his terrorist activities against the alien-controlled government.'"
+			)
+		if comedyabime == 'the pet girl ofsakurasou':
+			print(
+			    'Sakura Dormitory is a dorm of the high school affiliated with Suimei University of the Arts (often shortened as Suiko), which hosts the strangest, most trouble-making students. After being kicked out of the normal dorm for keeping a stray cat, Sorata Kanda moves into Sakura Dormitory. As he starts to get used to the life in the dorm, Mashiro Shiina, a world-famous artist who cannot even take care of her daily life, moves in. Sorata is forced to become Mashiros caretaker. The story is about their daily lives as well as mental growth.'
+			)
+
+		fantasyabime = ""
+		try:
+			if genreA == 'fantasy':
+				fantasyabime = input(
+				    'Here is a list of fantasy animes, if you would like more information about an anime please just type out the name and you will get a summary of the anime among other information!\nSword Art Online\nBNA\nBlue Exorcist\nThe Rising Of The Shield Hero\nRe:Creators\nK\nNagi no Asukara\nMagi: The Labyrinth of Magic\nChaos Dragon\n\n'
+				).lower()
+		except:
+			if fantasyabime != anime:
+				print('your input is invalid!please try again')
+		if fantasyabime == 'sword art online':
+			print(
+			    'In 2022, a virtual reality massively multiplayer online role-playing game (VRMMORPG) called Sword Art Online (SAO) is released. With the NerveGear, a helmet that stimulates the users five senses via their brain, players can experience and control their in-game characters with their minds. Both the game and the NerveGear were created by Akihiko Kayaba.\n On November 6, 10,000 players log into SAOs mainframe cyberspace for the first time, only to discover that they are unable to log out. Kayaba appears and tells the players that they must beat all 100 floors of Aincrad, a steel castle which is the setting of SAO if they wish to be free. He also states that those who suffer in-game deaths or forcibly remove the NerveGear out-of-game will suffer real-life deaths.One of the players named Kazuto "Kirito" Kirigaya, is one of 1,000 testers in the games previous closed beta. With the advantage of previous VR gaming experience and a drive to protect other beta testers from discrimination, he isolates himself from the greater groups and plays the game alone, bearing the mantle of "beater", a portmanteau of "beta tester" and "cheater".'
+			)
+		if fantasyabime == 'bna':
+			print(
+			    'Set in a world where humanoid animals (known as beastmen) and humans both co-exist and inhabit Earth, the series centers on Michiru Kagemori, a young teenage girl who one day suddenly starts turning into a tanuki beastman. Running away, she seeks refuge in Anima City, a city built for beastmen to be able to live peacefully as themselves, and ends up meeting a wolf beastman named Shirou Ogami. Together, they investigate how and why Michiru became a beastman, becoming mixed up in even stranger events in the process.'
+			)
+		if fantasyabime == 'blue excorxist':
+			print(
+			    'The story revolves around Rin Okumura, who, along with his younger twin Yukio Okumura, was raised by Father Shiro Fujimoto, an Exorcist. One day, Rin learns that he and Yukio are the sons of Satan. Witnessing Shiro dying to protect him, Rin draws the demon-slaying sword Kurikara (倶利伽羅), which restrains his demonic powers. From that moment on, Rin not only gains demonic features like fangs and a tail, but also the power to ignite into blue flames that destroy almost anything he touches.\nRin wishes to become an Exorcist like his guardian to become stronger and to defeat Satan. He enrolls at the prestigious True Cross Academy (正十字学園, Sei Jūji Gakuen), an exorcist cram school, which is actually the Japanese branch of the True Cross Order (正十字騎士團), an international organization dedicated to protect Assiah (human realm) from the Gehenna (demonic realm). Much to his surprise, Rin finds that Yukio is already a veteran Exorcist and is one of his teachers. Thus begins Rins journey to become an Exorcist, accompanied by his brother and his fellow students who quickly become his close friends.'
+			)
+		if fantasyabime == 'the rising of the sheild hero':
+			print(
+			    'Naofumi Iwatani, an easygoing Japanese youth, was summoned into a parallel world along with three other young men from parallel universes to become the worlds Cardinal Heroes and fight inter-dimensional hordes of monsters called Waves. Each of the heroes were respectively equipped with their own legendary equipment when summoned. Naofumi happened to receive the Legendary Shield, the sole defensive equipment, while the other heroes received a sword, a spear, and a bow, weapons meant for attack. Unlike the other heroes who are fully supported by the kingdom and gain several strong allies each, Naofumis luck turns to the worse after his single companion, revealed to be the kingdoms Princess, betrays him, steals all his belongings, and leaves him devoid of all assistance and supplies after she falsely accuses him of sexually assaulting her.Mocked by the nobility and shunned by everyone from his fellow Heroes to peasants, a now cynical Naofumi is forced to train as a hero alone while working to make ends meet, until he buys from a slave trader a young tanuki demi-human girl named Raphtalia and an egg that hatches into a bird-like monster whom he names "Filo", both quickly growing into adulthood and becoming powerful warriors under his care. As they little by little gain the trust and gratitude of the people with their heroic actions, Naofumi and his companions work together to carry out their mission as saviors as they unravel the mystery of the Waves and the reason why they are a threat not only to their world, but to other worlds as well.'
+			)
+		if fantasyabime == 're:creators':
+			print(
+			    'Sōta Mizushino is a young high school student and anime fan who dreams of writing his own light novel. While watching the anime adaptation of the mecha light novel Elemental Symphony of Vogelchevalier to look for inspiration, the tablet computer he is watching it on sputters and drags him into the animes world, where he witnesses a battle between the animes character Selesia and a mysterious girl wearing a military uniform. After returning with Selesia, Sōta discovers that other characters from different stories and forms of media were also brought to the real world, with some of them aligned with the military uniform princess, who promised them the ways to end the strife in their worlds and a way back home, unaware of her true intentions. To stop her, Sōta and Selesia agree to find the other characters and bring them home; lest the military uniform princess will bring untold destruction to every world that exists.'
+			)
+		if fantasyabime == 'k':
+			print(
+			    'Yashiro Isana has lived a relatively ordinary, simple life. He lives in the technologically advanced Shizume City and attends Ashinaka High School, a notable high school that is located on an island just outside the areas. Yashiro is friendly with everyone. Nothing seems wrong about him, except perhaps his habit of forgetting where his school-issued PDA is. However, nothing normal has been happening since the recent murder of Tatara Totsuka, prominent member of the infamous HOMRA. No one knows who exactly killed him but the man responsible bears an uncanny, identical appearance to Yashiro. Seeking vengeance, the Red Clansmen of HOMRA set out to get Yashiro and kill him. Everyone suspects that Yashiro is the murderer.'
+			)
+		if fantasyabime == 'nagi no asukara':
+			print(
+			    'Since long ago, human civilization had lived on the ocean floor. However, there were many humans who wanted to live above the surface and they moved to land creating a fundamental separation between the two. After their school-(Nami Middle School) closes down, four 14-year-old middle school students from the sea village, Shioshishio, have to attend Mihama Middle School on the surface. What follows is their struggles to adjust to a new environment and the relationships between the sea and land people, while dealing with their own newfound feelings that have just started appearing with the end of their childhood.'
+			)
+		if fantasyabime == 'magi: the labyrinth of magic':
+			print(
+			    'After being secluded for his entire life, a boy called Aladdin travels the world with his "friend" Ugo, the Djinn contained within Aladdins flute, until he meets Alibaba Saluja, a young man aiming to one day explore the nearby dungeon Amon and claim its treasures. Aladdin and Alibaba eventually become friends, and conquer Amon together, despite facing the opposition of the ruthless Jamil and his slave warriors: Morgiana and Goltas. After a desperate fight, Aladdin and Alibaba fend off Jamil and assist Morgiana in breaking the mental chains that bind her to her former master. Alibaba claims the dungeon while the Djinn Amon appears in front of Aladdin to briefly explain that he is a Magi and that Alibaba is his kings candidate. However, they are interrupted by an outside force trying to close the dungeon off. Alibaba, Aladdin, and Morgiana escape the dungeon while Goltas resolves to die to atone for his sins along with broken former master, but not before cutting Morgianas shackles. For some reason, Aladdin ends up teleported to a distant land, far away from the others, where he learns what a Magi is, and that he is one. Having no news of his friend, Alibaba uses the treasure he obtained in Amon to free all slaves in the city, including Morgiana and returns to Balbadd, his homeland.'
+			)
+		if fantasyabime == 'chaos dragon':
+			print(
+			    "The story takes place in Huanli (the Year of Dazzling) 3015. D'natia and Kōran, two countries fighting for supremacy, are causing the world to be torn apart due to the constant war. Amidst the strife is the island country Nil Kamui, which has lost its independence. Red Dragon, the guardian god of Nil Kamui, goes out of control. Will the island country be able to regain its independence?\nChaos Dragon is based on the role-playing fiction project Red Dragon, a story which was created by five notable writers: Gen Urobuchi, Kinoko Nasu, Izuki Kogyoku, Ryōgo Narita, and Simadoriru (member of the Stripe Pattern doujin circle). The results of their tabletop role-playing game sessions over six days created material for a seven-volume light novel series."
+			)
+
+		sliceoflifeabime = ''
+		try:
+			if genreA == 'slice of life':
+				abime = input(
+				    'Here is a list of slice of life animes, if you would like more information about an anime please just type out the name and you will get a summary of the anime !\nAnohana: The Flower We Saw That Day\nViolet Evergarden\nBeyond the Boundary\nK-On!\nToradora\nYour Lie in April\n Love, Chunibyo & Other Delusions\nKokoro Connect\nMy Little Monster\nBlend S\nMyriad Colors Phantom World\n\n'
+				).lower()
+		except:
+			if sliceoflifeabime != anime:
+				print('your input is invalid!please try again')
+
+		if sliceoflifeabime == 'anohana: the flower we saw that day':
+			print(
+			    "Menma's friends reunite five years after her death to help her remember and fulfil a wish so she can pass on into the afterlife."
+			)
+		if sliceoflifeabime == 'violet evergarden':
+			print(
+			    "Violet, an emotionally detached soldier who received prosthetic arms after a combat injury, settles into postwar life as a ghostwriter while searching for the meaning behind her former commander's final words to her."
+			)
+		if sliceoflifeabime == 'beyond the boundry':
+			print(
+			    'One day, high school student Akihito Kanbara instinctively goes to save his fellow schoolmate, Mirai Kuriyama, from committing suicide. Following his pleas, Mirai suddenly stabs Akihito with a sword formed out of her own blood and is shocked to discover that Akihito is an immortal "half-youmu"—the offspring of a supernatural creature, called a youmu, and a human. After learning that Mirai is a Spirit World Warrior (異界士, Ikaishi)—specialists who protect humans from being affected by youmu—and the last surviving member of her spirit hunting clan, their lives become intertwined as Akihito seeks to help Mirai gain the confidence to kill youmu so that she may stop attempting to kill him as practice.'
+			)
+		if sliceoflifeabime == 'k-on':
+			print = (
+			    "When they're not gorging themselves on sugary snacks, four aspiring high school musicians crank out catchy tunes as members of the Light Music Club"
+			)
+		if sliceoflifeabime == 'toradora':
+			print(
+			    'Fierce in appearance but gentle at heart, Ryuji forms an unlikely friendship with Taiga, a tiny girl with a sharp tongue and a tough attitude. Together they try to help each confess their love to their crushes.'
+			)
+		if sliceoflifeabime == 'your lie in april':
+			print(
+			    "After his mother's death, a paino prodigy's will to play disappears. But meeting a free-spirited girl who plays the violin turns his life around"
+			)
+		if sliceoflifeabime == 'love,chunibyo & other delusions':
+			print(
+			    "High schooler Yuta wants to leave his past as a delusional weirdo behind. But his classmate Rikka has her own delusions, and she's interested in his."
+			)
+		if sliceoflifeabime == 'my little monster':
+			print(
+			    "Impassive girl meets trouble maker in a brand new love story!\nAfter Mizutani Shizuku, a girl whose sole interest is studying, is asked to deliver some handouts to Yoshida Haru, a boy who hasn't come to school after spilling blood on the first day. She finds herself the target of his affection.\nThis is a story about a boy and a girl who struggle with love and friendship. Opening yourself up to other people forces you to be honest with yourself."
+			)
+		if sliceoflifeabime == 'blend s':
+			print(
+			    'Tsundere, Imouto are only a few of the personal that the café waitresses play out here. And the new hire Maika, is asked by the story manager to play none other than the super sadist!? As she becomes devoted to her work, her super sadist persona blooms unexpectedly... Everything is a treat - even being stomped on - in this outrageous working comedy.'
+			)
+		if sliceoflifeabime == 'myraid colors phantom world':
+			print(
+			    'In the near future, monstrous creatures called "phantoms" descend upon the worldm Haruhiko Ichijo is a student at Hosea Academy, along with Mai Kawakami, Reina Izumi, and Koito Minase, three girls who fight these creatures. High school life proceeds as normal until a certain incident reveals the truth of their world to them.'
+			)
