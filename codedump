@@ -1,0 +1,9 @@
+# elif optin == 't' or 'tv shows':
+    #   genret = input ('please choose a genre from the list below.\nAction\nAdventure\nComedy\nDrama\nSlice of Life\nFantasy\nMagic\nSupernatural\nMystery\nPsychological\nRomance\nSci-Fi\n').lower()
+    # elif optin == 'm' or 'movie':
+    #   genrem = input ('please choose a genre from the list below.\nAction\nAdventure\nComedy\nDrama\nSlice of Life\nFantasy\nMagic\nSupernatural\nMystery\nPsychological\nRomance\nSci-Fi\n').lower()
+
+
+
+    # while genreA == '':
+    #  abime = input ('Here is a list of _ _ animes, if you would like more information about the anime please just type out the name and you will get a summary of the anime among other information!\n\n\n\n\n\n\n\n\n\n\n\n').lower()
